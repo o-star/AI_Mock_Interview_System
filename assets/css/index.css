@@ -1,0 +1,42 @@
+html {
+    height: 100vh;
+    background-image: url('../images/index_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#main-content {
+    padding-top: 10vh;
+    text-align: center;
+}
+
+#main-title {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: rgb(75, 73, 73);
+    animation: main-ani 1000ms 300ms ease forwards;
+    opacity: 0;
+}
+
+#sub-description {
+    padding-top: 1vh;
+    color: rgb(109, 105, 105);
+    animation: main-ani 1000ms 700ms ease forwards;
+    opacity: 0;
+}
+
+@keyframes main-ani {
+    from{
+        opacity: 0;
+        transform: translateY(3vh);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
