@@ -1,3 +1,3 @@
-import { visionlist } from './QuestionList.js'
+import { visionList } from './QuestionList.js'
 
-console.log(visionlist)
+console.log(visionList)
