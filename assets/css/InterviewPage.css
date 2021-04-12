@@ -3,7 +3,7 @@ html {
     background: linear-gradient(137deg, #eb6282, rgb(158, 150, 75), #509eb6); 
     background-size: 800% 800%;
     background-repeat: no-repeat;
-    animation: AnimationName 9s ease infinite;
+    animation: gradaitonAni 9s ease infinite;
 }
 
 #main-title {
@@ -16,6 +16,8 @@ html {
     margin-top: 18vh;
     text-align: center;
     padding-bottom: 10vh;
+    animation: main-ani 1.6s 200ms ease forwards;
+    opacity: 0;
 }
 
 #sub-desc {
@@ -68,8 +70,32 @@ html {
     list-style: none;
 }
 
-@keyframes AnimationName {
+#start-button {
+    margin-top: 2vh;
+    background : none;
+    color: rgb(230, 227, 227);
+    font-size: 1rem;
+    font-weight: 550;
+    padding: 8px 10px;
+    border: rgb(230, 227, 227) solid 2px;
+    border-radius: 7px;
+}
+
+#start-button:hover {
+    box-shadow: 0px 0px 10px 0px rgb(218, 218, 218);
+}
+
+#start-button:focus {
+    outline: none;
+}
+
+@keyframes gradaitonAni {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
+}
+
+@keyframes main-ani {
+    from {  opacity: 0;  }
+    to {  opacity: 1;  }
 }
