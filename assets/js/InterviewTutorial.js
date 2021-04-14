@@ -1,5 +1,6 @@
 
 $(document).ready(() => {
+    let slideidx = 1;
 
     $('#left-button').click(() => {
         left();
@@ -10,15 +11,21 @@ $(document).ready(() => {
     })
 
     const left = () => {
-        $('#slidebox').animate({
-            left: '+=55.7vw'
-        })
+        if (slideidx > 1) {
+            $('#slidebox').animate({
+                left: '+=55.7vw'
+            }, 700)
+            slideidx--;
+        }
     }
 
     const right = () => {
-        $('#slidebox').animate({
-            left: '-=55.7vw'
-        })
+        if (slideidx < 3) {
+            $('#slidebox').animate({
+                left: '-=55.7vw'
+            }, 700)
+            slideidx++;
+        }
     }
 
 })

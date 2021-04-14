@@ -42,7 +42,7 @@ html {
 #tutorial-content {
     position: relative;
     width : 55vw;
-    height: 45vh;
+    height: 50vh;
     border: white solid 1.7px;
     border-radius: 5px;
     padding: 0px;
@@ -56,24 +56,52 @@ html {
     cursor: pointer;
 }
 
+.img-style {
+    width: 9vw;
+    padding: 0 20px;
+}
+
+.slide-text {
+    color: honeydew;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
 ul {
     position: absolute;
     top: 0;
     left: 0;
     margin: 0px;
     padding: 0px;
-    width: 180vw;
+    width: 200vw;
     height: 100%;
     text-align: left;
 }
 
 ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0px;
     float: left;
     height: 100%;
     width: 55vw;
     list-style: none;
-    border: black solid;
+}
+
+#face-img1 {
+    padding: 10px;
+    border-radius: 10px;
+    animation: borderFade 3s 1.3s ease infinite;
+}
+
+@keyframes borderFade {
+    0%{border: rgb(255, 255, 255) solid 2px}
+    25%{border:rgb(149, 148, 148) solid 2px}
+    50%{border:rgb(61, 59, 59) solid 2px}
+    75%{border:rgb(149, 148, 148) solid 2px}
+    100%{border: rgb(255, 255, 255) solid 2px}
 }
 
 @keyframes gradaitonAni {
