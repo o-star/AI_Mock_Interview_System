@@ -13,7 +13,14 @@
     <div id='main-contents'>
         <div id='main-title'>웹캠 / 마이크 테스트</div>
         <div id='sub-desc'>본격적인 모의 면접에 앞서 웹캠, 마이크 세팅을 완료해주세요</div>
+        <div id='sub-desc'>테스트 버튼을 클릭해 녹화가 올바르게 진행되는지 확인해주세요</div>
+        <div>
+            <video autoplay muted id='record-screen'></video>
+        </div>
+        <button id='record-button' onclick="onRecordStart()">Record Test</button>
+        <button id='stop-button'>Stop</button>
     </div>
+    <script src="assets/js/InterviewSetting.js"></script>
 </body>
 
 </html>
