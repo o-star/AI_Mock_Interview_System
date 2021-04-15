@@ -16,9 +16,13 @@
         <div id='sub-desc'>테스트 버튼을 클릭해 녹화가 올바르게 진행되는지 확인해주세요</div>
         <div>
             <video autoplay muted id='record-screen'></video>
+            <video id='view-screen'></video>
         </div>
-        <button id='record-button' onclick="onRecordStart()">Record Test</button>
-        <button id='stop-button'>Stop</button>
+        <div>
+            <button id='record-button' class='button-style' onclick="onRecordStart()">Record Test</button>
+            <button id='stop-button' class='button-style' onclick="onRecordStop()">Stop</button>
+            <button id='stop-button' class='button-style' onclick="onPlay()">녹화내용 확인</button>
+        </div>
     </div>
     <script src="assets/js/InterviewSetting.js"></script>
 </body>

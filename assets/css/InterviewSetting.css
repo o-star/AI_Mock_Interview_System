@@ -7,9 +7,11 @@ html {
 }
 
 #main-contents {
-    margin-top: 13vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding-bottom: 10vh;
 }
 
 #main-title {
@@ -29,7 +31,8 @@ html {
     opacity: 0;
 }
 
-#record-button, #stop-button {
+.button-style {
+    margin: 0 3px;
     opacity: 0;
     background : none;
     color: rgb(230, 227, 227);
@@ -43,23 +46,27 @@ html {
     box-shadow: rgb(93, 93, 92) 0px 0px 6px;
 }
 
-#record-button:hover {
+.button-style:hover {
     box-shadow: rgb(218, 218, 214) 0px 0px 10px;
 }
 
-#record-button:focus {
+.button-style:focus {
     outline: none;
 }
 
-#record-screen {
+#record-screen, #view-screen {
     opacity: 0;
     margin: 5vh auto 4vh auto;
-    width: 50vw;
-    height: 50vh;
+    width: 508px;
+    height: 380px;
     border: rgb(250, 247, 230) solid 2px;
     border-radius: 10px;
     animation: fadeIn 1s 0.9s ease forwards;
     box-shadow: rgb(66, 66, 66) 0px 0px 8px;
+}
+
+#view-screen {
+    display: none;
 }
 
 @keyframes gradaitonAni {
