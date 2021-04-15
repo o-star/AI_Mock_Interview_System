@@ -7,7 +7,7 @@ html {
 }
 
 #main-contents {
-    margin-top: 16vh;
+    margin-top: 13vh;
     text-align: center;
     padding-bottom: 10vh;
 }
@@ -45,8 +45,9 @@ html {
     height: 50vh;
     border: white solid 1.7px;
     border-radius: 5px;
-    padding: 0px;
+    padding: 0;
     overflow: hidden;
+    box-shadow: rgb(93, 93, 92) 0px 0px 6px;
 }
 
 .tutorial-button {
@@ -59,41 +60,62 @@ html {
 .img-style {
     width: 9vw;
     padding: 0 20px;
+    margin: 15px 0;
 }
 
 .slide-text {
+    font-size: 1.05rem;
     color: honeydew;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
 }
 
 ul {
     position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0px;
-    padding: 0px;
-    width: 200vw;
+    font-size: 0;
+    white-space: nowrap;
+    padding: 0;
+    list-style: none;
     height: 100%;
-    text-align: left;
+    margin: 0;
 }
 
 ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0px;
-    float: left;
-    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
     width: 55vw;
-    list-style: none;
+    margin-top: 5vh;
 }
 
 #face-img1 {
     padding: 10px;
     border-radius: 10px;
     animation: borderFade 3s 1.3s ease infinite;
+}
+
+#record-img {
+    width: 16vw;
+    margin: 15px 0;
+}
+
+#next-button {
+    display: none;
+    margin-top: 3vh;
+    background : none;
+    color: rgb(230, 227, 227);
+    font-size: 1rem;
+    font-weight: 550;
+    padding: 8px 10px;
+    border: rgb(230, 227, 227) solid 1.9px;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: rgb(93, 93, 92) 0px 0px 6px;
+}
+
+#next-button:hover {
+    box-shadow: rgb(218, 218, 214) 0px 0px 10px;
+}
+
+#next-button:focus {
+    outline: none;
 }
 
 @keyframes borderFade {

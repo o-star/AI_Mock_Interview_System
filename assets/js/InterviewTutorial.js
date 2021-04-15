@@ -13,8 +13,10 @@ $(document).ready(() => {
     const left = () => {
         if (slideidx > 1) {
             $('#slidebox').animate({
-                left: '+=55.7vw'
+                left: '+=55vw'
             }, 700)
+            if (slideidx == 3)
+                $('#next-button').css('display', 'none');
             slideidx--;
         }
     }
@@ -22,13 +24,12 @@ $(document).ready(() => {
     const right = () => {
         if (slideidx < 3) {
             $('#slidebox').animate({
-                left: '-=55.7vw'
+                left: '-=55vw'
             }, 700)
             slideidx++;
+            if (slideidx == 3)
+                $('#next-button').css('display', 'inline');
         }
     }
 
 })
-
-//참조 사이트
-//https://m.blog.naver.com/PostView.nhn?blogId=st004329&logNo=221055679854&proxyReferer=https:%2F%2Fwww.google.com%2F

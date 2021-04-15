@@ -79,6 +79,7 @@ html {
     padding: 8px 10px;
     border: rgb(230, 227, 227) solid 2px;
     border-radius: 7px;
+    cursor: pointer;
 }
 
 #start-button:hover {
