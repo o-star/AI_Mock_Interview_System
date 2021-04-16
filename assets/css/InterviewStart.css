@@ -1,0 +1,102 @@
+html, body {
+    background-color: rgb(207, 240, 250);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#desc-contents {
+    opacity: 0;
+    text-align: center;
+    color: rgb(98, 97, 95);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 5vh;
+    animation: fadeIn 1.3s 0.3s ease forwards;
+}
+
+#desc-contents div {
+    margin-top: 5px;
+}
+
+#last-info {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(91, 167, 202);
+    width: 480px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: rgb(59, 57, 59) 0px 0px 10px;
+    animation: fadeIn 1.3s 0.8s ease forwards;
+}
+
+.info-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: rgb(241, 238, 226);
+}
+
+.sub-ment {
+    font-size: 1.3rem;
+    font-weight: 630;
+}
+
+.time-box {
+    vertical-align: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: rgb(238, 237, 232) solid;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.time-box div {
+    font-size: 1.3rem;
+}
+
+.time-amount {
+    font-size: 4rem;
+}
+
+#info1 {
+    border-right: rgb(238, 237, 232) solid;
+}
+
+#start-btn {
+    margin-top: 5vh;
+    background-color: rgb(91, 167, 202);
+    border: rgb(71, 70, 70) solid 1px;
+    border-radius: 5px;
+    color: cornsilk;
+    opacity: 0;
+    font-size: 1.4rem;
+    padding: 7px 28px;
+    animation: fadeIn 1.3s 0.8s ease forwards;
+    box-shadow: rgb(71, 70, 70) 0px 0px 5px;
+    cursor: pointer;
+}
+
+#start-btn:hover {
+    box-shadow: rgb(56, 55, 55) 0px 0px 15px;
+}
+
+#start-btn:focus {
+    outline: none;
+}
+
+@keyframes fadeIn {
+    from { opacity : 0; }
+    to { opacity : 1; }
+}
