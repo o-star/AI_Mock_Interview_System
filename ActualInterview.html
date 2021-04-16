@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI MOCK INTERVIEW SYSTEM</title>
+    <link rel="stylesheet" href="./assets/css/ActualInterview.css">
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div id='main-contents'>
+        <div id='problem-contents'></div>
+        <div id='timer-and-video'>
+            <div id='timer-section'>
+                <div id='timer'> START </div>
+                <button id='ans-fin-btn' class="btn-style">답변완료</button>
+                <div>
+                    <button id='play-btn' class="btn-style">녹화본 재생</button>
+                    <button id='re-record-btn' class="btn-style">재답변</button>
+                </div>
+            </div>
+            <video autoplay muted id='record-screen'></video>
+            <video id='view-screen'></video>
+        </div>
+        <script src='./assets/js/ActualInterview.js' type="module"></script>
+    </div>
+</body>
+
+</html>
