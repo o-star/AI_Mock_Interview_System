@@ -76,7 +76,7 @@ html, body {
 }
 
 #interview-img {
-    width: 400px;
+    width: 38vw;
     border-radius: 15px;
 }
 
@@ -94,12 +94,12 @@ html, body {
 }
 
 #questions-img {
-    width: 500px;
+    width: 40vw;
     border-radius: 10px;
 }
 
 #interview-screen {
-    width: 520px;
+    width: 45vw;
     border-radius: 10px;
 }
 
