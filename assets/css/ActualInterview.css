@@ -90,7 +90,7 @@ html, body {
     outline: none;
 }
 
-#play-btn, #re-record-btn {
+#play-btn, #re-record-btn, #next-btn, #interview-fin-btn {
     display: none;
 }
 
