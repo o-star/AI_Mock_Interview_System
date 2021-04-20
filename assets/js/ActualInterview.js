@@ -10,7 +10,7 @@ let reRecordBtn = document.getElementById('re-record-btn')
 let nextBtn = document.getElementById('next-btn')
 let interviewFinBtn = document.getElementById('interview-fin-btn')
 
-let readytime = 3, answertime = 90; // 준비시간 30초, 답변시간 90초
+let readytime = 30, answertime = 90; // 준비시간 30초, 답변시간 90초
 let recorder
 let recordedChunks = []
 let recordInterval
