@@ -8,6 +8,18 @@
 
 ***
 
+### Github hosting URL
+
+- https://o-star.github.io/AI_Mock_Interview_System/
+
+<br/>
+
+<br/>
+
+<br/>
+
+***
+
 ### Description
 
 - **최근 코로나의 영향은 채용 시장에서도 많은 변화를 일으켰다. 대표적인 변화로는 비대면 방식의 AI 면접을 예로 들 수 있다. AI 면접은 면접관들의 주관이 개입되지 않고 지원자의 행동패턴만을 가지고 평가가 이뤄지는 비대면 면접 형식을 일컫는다.**
